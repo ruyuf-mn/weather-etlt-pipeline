@@ -1,4 +1,4 @@
-#  Weather EtLT Pipeline (Riyadh & Jeddah)
+#  Weather EtLT Pipeline 
 
 An end-to-end EtLT (Extract, Light Transform, Load, Heavy Transform) data pipeline that extracts hourly weather data for Riyadh and Jeddah, loads it into PostgreSQL (Supabase), and builds analytical data models using SQL Views & Window Functions.
 
