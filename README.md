@@ -19,7 +19,7 @@ This project intentionally follows the **EtLT** pattern:
 * Programming Language: Python
 * API: [Open-Meteo Weather API](https://open-meteo.com/)
 * Database: PostgreSQL (Supabase)
-* Libraries: `requests`, `psycopg2` / `sqlalchemy`
+* Libraries: `requests`, `pandas` , `psycopg2` / `sqlalchemy` 
 * Data Modeling: SQL Views, Window Functions (`LAG`, `DENSE_RANK`, `PARTITION BY`)
 
 ---
@@ -39,14 +39,12 @@ The SQL logic creates four production ready views:
 
  1. Prerequisites
 Ensure you have Python installed and the required libraries:
-```
-bash
-pip install requests psycopg2-binary
+```bash
+pip install pandas requests psycopg2-binary
 ```
 2. Run the Extraction & Loading Script
 Execute the Python script to fetch the latest weather data and populate PostgreSQL:
-```
-bash
+```bash
 python etl_pipeline.py
 ```
 3. Build Analytical Views
